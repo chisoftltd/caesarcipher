@@ -31,7 +31,7 @@ while cipher_continue:
 	shift = int(input("Type the shift number:\n"))
 	shift = shift % 26
 	caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
-	reply = input("Do you want to encode any - \'Yes\' or \'No\'? ").lower()
+	reply = input("Do you want to encode any - \'Yes\' or \'No\'?\n ").lower()
 	if reply == 'no':
 		cipher_continue = False
 		print("Good bye!")
